@@ -18,6 +18,11 @@ public class Item {
         this.create = create;
     }
 
+    public Item(String name, String description) {
+        this.name = name;
+        this.description = description;
+    }
+
     public String getName() {
         return this.name;
     }
@@ -36,5 +41,11 @@ public class Item {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public void editItem(String name, String description) {
+        this.name = name;
+        this.description = description;
+        System.out.println("Заявка" + getId() + "переименована в " + name + "c описанием " + description + ".");
     }
 }
